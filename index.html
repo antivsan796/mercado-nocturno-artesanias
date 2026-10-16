@@ -11,6 +11,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#wrapper > .banner .content > h1 {
+				font-size: clamp(1.1rem, 2vw, 2rem);
+				white-space: nowrap;
+			}
+
+			#wrapper > .banner .content > p {
+				text-align: justify;
+			}
+
+			.event-section h2 {
+				white-space: nowrap;
+			}
+
+			.event-section p {
+				text-align: justify;
+			}
+
+			@media screen and (max-width: 980px) {
+				#wrapper > .banner .content > h1,
+				.event-section h2 {
+					white-space: normal;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -41,7 +66,7 @@
 				<!-- Two -->
 					<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-    					<div class="content">
+									<div class="content event-section">
         					<h2>Sobre la actividad</h2>
 
         				<p>
@@ -70,7 +95,7 @@
 
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
+									<div class="content event-section">
 								<h2>Stands de artesanias</h2>
 								<p>Se ofrecen llaveros, cadenas, amuletos, bolsos pequeños, peluches de distintos personajes y otros accesorios hechos a mano. La variedad de diseños permite encontrar opciones para diferentes gustos.</p>
 						</div>
@@ -81,7 +106,7 @@
 
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
+									<div class="content event-section">
 							<h2>Relevancia para la comunidad</h2>
 							<p>El Mercado Nocturno reúne a emprendedores y visitantes en una actividad abierta a la comunidad. Además, permite conocer intereses, preferencias, percepción de precios, variedad de productos, asistencia y posibles mejoras para este tipo de ferias.</p>
 						</div>
@@ -140,14 +165,6 @@
 									</div>
 								</article>
 								<article>
-									<a href="imagenes%20ferias/stand1.jpeg" class="image">
-										<img src="imagenes%20ferias/stand1.jpeg" alt="Stand de artesanías número 1" />
-									</a>
-									<div class="caption">
-										<h3>Stand 1</h3>
-									</div>
-								</article>
-								<article>
 									<a href="imagenes%20ferias/stand3.jpeg" class="image">
 										<img src="imagenes%20ferias/stand3.jpeg" alt="Stand de artesanías número 3" />
 									</a>
@@ -185,14 +202,6 @@
 									</a>
 									<div class="caption">
 										<h3>Panorámica 3</h3>
-									</div>
-								</article>
-								<article>
-									<a href="imagenes%20ferias/dragon1.jpeg" class="image">
-										<img src="imagenes%20ferias/dragon1.jpeg" alt="Decoración de dragón en el Mercado Nocturno" />
-									</a>
-									<div class="caption">
-										<h3>Dragón 1</h3>
 									</div>
 								</article>
 							</div>
