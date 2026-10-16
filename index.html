@@ -33,6 +33,28 @@
 				min-height: 27.2rem;
 			}
 
+			.wrapper.style1.survey-results > .inner {
+				width: 80rem;
+			}
+
+			.survey-results h3 {
+				font-size: 1.25rem;
+			}
+
+			.survey-answers {
+				width: min(100%, 18rem);
+				margin: 0 auto 2rem;
+				text-align: left;
+			}
+
+			.survey-answers li {
+				display: grid;
+				grid-template-columns: minmax(0, 1fr) auto;
+				gap: 0.75rem;
+				margin: 0.35rem 0;
+				line-height: 1.4;
+			}
+
 			@media screen and (max-width: 1280px) {
 				#wrapper > .banner .content > h1,
 				.event-section h2 {
@@ -65,7 +87,7 @@
 								entre Chile y Pichincha, frente a la Biblioteca Municipal.
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll">Conocer la actividad</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll">Conoce la actividad</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -77,7 +99,7 @@
 					<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in event-spotlight" id="first">
 									<div class="content event-section">
-        					<h2>Sobre la actividad</h2>
+        					<h2>Conoce la actividad</h2>
 
         				<p>
             				El Mercado Nocturno del Barrio Chino de Guayaquil reunió a artesanos,
@@ -95,6 +117,9 @@
             				La actividad se desarrolló el 3 de octubre de 2026 en la calle Sucre,
             				entre Chile y Pichincha, frente a la Biblioteca Municipal de Guayaquil.
         					</p>
+							<ul class="actions">
+								<li><a href="#contacto" class="button smooth-scroll">Participa en la actividad</a></li>
+							</ul>
     					</div>
 
     					<div class="image">
@@ -108,6 +133,9 @@
 									<div class="content event-section">
 								<h2>Stands de artesanias</h2>
 								<p>Se ofrecen llaveros, cadenas, amuletos, bolsos pequeños, peluches de distintos personajes y otros accesorios hechos a mano. La variedad de diseños permite encontrar opciones para diferentes gustos.</p>
+								<ul class="actions">
+									<li><a href="#contacto" class="button smooth-scroll">Participa en la actividad</a></li>
+								</ul>
 						</div>
 						<div class="image">
 								<img src="imagenes%20ferias/stand5.jpeg" alt="Stand con collares, cadenas, pulseras y amuletos artesanales" />
@@ -119,6 +147,9 @@
 									<div class="content event-section">
 							<h2>Relevancia para la comunidad</h2>
 							<p>El Mercado Nocturno reúne a emprendedores y visitantes en una actividad abierta a la comunidad. Además, permite conocer intereses, preferencias, percepción de precios, variedad de productos, asistencia y posibles mejoras para este tipo de ferias.</p>
+							<ul class="actions">
+								<li><a href="#contacto" class="button smooth-scroll">Participa en la actividad</a></li>
+							</ul>
 						</div>
 						<div class="image">
 								<img src="imagenes%20ferias/dragon3.jpeg" alt="Puesto con una cabeza de león chino, abanico y artículos artesanales" />
@@ -219,91 +250,147 @@
 					</section>
 
 				<!-- Six -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style1 align-center survey-results">
 						<div class="inner">
 							<h2>Resultados de las encuestas</h2>
 							<p>Analizamos las opiniones de los asistentes para entender el valor de las artesanías y el emprendimiento en nuestra comunidad </p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>1. ¿Con qué frecuencia participa o visita ferias de artesanías?</h3>
-									<p>Es la primera vez: 50%<br />Ocasionalmente: 50%<br />Mensualmente: 0%<br />Semanalmente: 0%<br />Varias veces por semana: 0%</p>
+									<span class="icon solid style2 major fa-calendar-alt"></span>
+									<h3>¿Con qué frecuencia participa o visita ferias de artesanías?</h3>
+									<ul class="survey-answers">
+										<li><span>Es la primera vez</span><span>50%</span></li>
+										<li><span>Ocasionalmente</span><span>50%</span></li>
+										<li><span>Mensualmente</span><span>0%</span></li>
+										<li><span>Semanalmente</span><span>0%</span></li>
+										<li><span>Varias veces por semana</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>2. ¿Considera que esta actividad beneficia a la comunidad?</h3>
-									<p>Sí: 50%<br />No: 50%<br />No está seguro/a: 0%</p>
+									<span class="icon solid style2 major fa-users"></span>
+									<h3>¿Considera que esta actividad beneficia a la comunidad?</h3>
+									<ul class="survey-answers">
+										<li><span>Sí</span><span>50%</span></li>
+										<li><span>No</span><span>50%</span></li>
+										<li><span>No está seguro/a</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>3. ¿Considera que esta actividad beneficia a los emprendedores?</h3>
-									<p>Sí: 50%<br />No: 50%<br />No está seguro/a: 0%</p>
+									<span class="icon solid style2 major fa-store"></span>
+									<h3>¿Considera que esta actividad beneficia a los emprendedores?</h3>
+									<ul class="survey-answers">
+										<li><span>Sí</span><span>50%</span></li>
+										<li><span>No</span><span>50%</span></li>
+										<li><span>No está seguro/a</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>4. ¿Recomendaría ferias de artesanías a otras personas?</h3>
-									<p>Sí: 50%<br />No: 50%<br />Tal vez: 0%</p>
+									<span class="icon solid style2 major fa-thumbs-up"></span>
+									<h3>¿Recomendaría ferias de artesanías a otras personas?</h3>
+									<ul class="survey-answers">
+										<li><span>Sí</span><span>50%</span></li>
+										<li><span>No</span><span>50%</span></li>
+										<li><span>Tal vez</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>5. ¿Considera que la actividad es accesible para diferentes grupos de la comunidad?</h3>
-									<p>Sí: 50%<br />No: 50%<br />Parcialmente: 0%</p>
+									<span class="icon solid style2 major fa-universal-access"></span>
+									<h3>¿Considera que la actividad es accesible para diferentes grupos de la comunidad?</h3>
+									<ul class="survey-answers">
+										<li><span>Sí</span><span>50%</span></li>
+										<li><span>No</span><span>50%</span></li>
+										<li><span>Parcialmente</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>6. ¿Considera que los precios están acordes a lo ofrecido?</h3>
-									<p>Sí: 50%<br />No: 50%<br />Parcialmente: 0%</p>
+									<span class="icon solid style2 major fa-tags"></span>
+									<h3>¿Considera que los precios están acordes a lo ofrecido?</h3>
+									<ul class="survey-answers">
+										<li><span>Sí</span><span>50%</span></li>
+										<li><span>No</span><span>50%</span></li>
+										<li><span>Parcialmente</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>7. ¿Cómo calificaría su experiencia general en la actividad?</h3>
-									<p>Muy buena: 50%<br />Buena: 50%<br />Regular: 0%<br />Mala: 0%<br />Muy mala: 0%</p>
+									<span class="icon solid style2 major fa-star"></span>
+									<h3>¿Cómo calificaría su experiencia general en la actividad?</h3>
+									<ul class="survey-answers">
+										<li><span>Muy buena</span><span>50%</span></li>
+										<li><span>Buena</span><span>50%</span></li>
+										<li><span>Regular</span><span>0%</span></li>
+										<li><span>Mala</span><span>0%</span></li>
+										<li><span>Muy mala</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>8. ¿Cómo calificaría la variedad de productos ofrecidos?</h3>
-									<p>Muy buena: 50%<br />Buena: 50%<br />Regular: 0%<br />Mala: 0%<br />Muy mala: 0%</p>
+									<span class="icon solid style2 major fa-box-open"></span>
+									<h3>¿Cómo calificaría la variedad de productos ofrecidos?</h3>
+									<ul class="survey-answers">
+										<li><span>Muy buena</span><span>50%</span></li>
+										<li><span>Buena</span><span>50%</span></li>
+										<li><span>Regular</span><span>0%</span></li>
+										<li><span>Mala</span><span>0%</span></li>
+										<li><span>Muy mala</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>9. ¿Cómo calificaría la asistencia de público a la feria?</h3>
-									<p>Muy buena: 50%<br />Buena: 50%<br />Regular: 0%<br />Mala: 0%<br />Muy mala: 0%</p>
+									<span class="icon solid style2 major fa-user-check"></span>
+									<h3>¿Cómo calificaría la asistencia de público a la feria?</h3>
+									<ul class="survey-answers">
+										<li><span>Muy buena</span><span>50%</span></li>
+										<li><span>Buena</span><span>50%</span></li>
+										<li><span>Regular</span><span>0%</span></li>
+										<li><span>Mala</span><span>0%</span></li>
+										<li><span>Muy mala</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>10. ¿Por qué medio conoció esta actividad?</h3>
-									<p>Redes sociales: 50%<br />Amigos/familia: 50%<br />Institución/organización: 0%<br />Publicidad: 0%<br />Otro: 0%</p>
+									<span class="icon solid style2 major fa-bullhorn"></span>
+									<h3>¿Por qué medio conoció esta actividad?</h3>
+									<ul class="survey-answers">
+										<li><span>Redes sociales</span><span>50%</span></li>
+										<li><span>Amigos/familia</span><span>50%</span></li>
+										<li><span>Institución/organización</span><span>0%</span></li>
+										<li><span>Publicidad</span><span>0%</span></li>
+										<li><span>Otro</span><span>0%</span></li>
+									</ul>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>11. ¿Qué tipo de artesanía le interesa más?</h3>
-									<p>Pulseras: 50%<br />Cadenas: 50%<br />Amuletos: 0%<br />Peluches: 0%<br />Otro: 0%</p>
+									<span class="icon solid style2 major fa-gem"></span>
+									<h3>¿Qué tipo de artesanía le interesa más?</h3>
+									<ul class="survey-answers">
+										<li><span>Pulseras</span><span>50%</span></li>
+										<li><span>Cadenas</span><span>50%</span></li>
+										<li><span>Amuletos</span><span>0%</span></li>
+										<li><span>Peluches</span><span>0%</span></li>
+										<li><span>Otro</span><span>0%</span></li>
+									</ul>
 								</section>
 							</div>
 						</div>
 					</section>
 
 				<!-- Seven -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style1 align-center" id="contacto">
 						<div class="inner medium">
-							<h2>Get in touch</h2>
+							<h2>Contacto</h2>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field half">
-										<label for="name">Name</label>
+										<label for="name">Nombre</label>
 										<input type="text" name="name" id="name" value="" />
 									</div>
 									<div class="field half">
-										<label for="email">Email</label>
+										<label for="email">Correo</label>
 										<input type="email" name="email" id="email" value="" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
+										<label for="message">Mensaje</label>
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+									<li><input type="submit" name="submit" id="submit" value="Enviar" /></li>
 								</ul>
 							</form>
 
@@ -314,13 +401,16 @@
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.tiktok.com/@comitebarriochino.gyq" class="icon brands style2 fa-tiktok"><span class="label">TikTok</span></a></li>
+								<li><a href="https://www.facebook.com/p/Comit%C3%A9-Barrio-Chino-Guayaquil-61568331669615/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/comitebarriochino.gyq/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://linktr.ee/comitebarriochino?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio&amp;fbclid=PAZXh0bgNhZW0DMTAwAHBkb2YCc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGneLoQkznSi1tr5_jPi4glljHqpYVXbv928HzsLbnEH2_2E18y9pnpO-mYzwo_aem_gjxfdGKEVr8Iev_lEUvy1A" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>
+								&copy; 2026 Desarrollado por Dereck Enríquez y Anthony Santana.<br />
+								Design: <a href="https://html5up.net">HTML5 UP</a>.<br />
+								Todos los derechos reservados.
+							</p>
 						</div>
 					</footer>
 
