@@ -42,8 +42,11 @@
 			}
 
 			.survey-answers {
+				background-color: rgba(0, 0, 0, 0.04);
+				border-left: 0.2rem solid rgba(0, 0, 0, 0.25);
 				width: min(100%, 18rem);
 				margin: 0 auto 2rem;
+				padding: 0.75rem 1rem;
 				text-align: left;
 			}
 
@@ -53,6 +56,29 @@
 				gap: 0.75rem;
 				margin: 0.35rem 0;
 				line-height: 1.4;
+			}
+
+			.open-question-answer {
+				background-color: rgba(0, 0, 0, 0.04);
+				border-left: 0.2rem solid rgba(0, 0, 0, 0.25);
+				font-size: 0.9rem;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0.75rem 1rem;
+				text-align: justify;
+			}
+
+			.open-question-card h3 {
+				text-align: center;
+			}
+
+			.items.style1.medium.survey-question-grid > .survey-question-break {
+				flex: 0 0 100%;
+				width: 100%;
+				height: 0;
+				margin: 0;
+				padding: 0;
+				border: 0;
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -146,9 +172,9 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in event-spotlight">
 									<div class="content event-section">
 							<h2>Relevancia para la comunidad</h2>
-							<p>El Mercado Nocturno reúne a emprendedores y visitantes en una actividad abierta a la comunidad. Además, permite conocer intereses, preferencias, percepción de precios, variedad de productos, asistencia y posibles mejoras para este tipo de ferias.</p>
+							<p><p>El Mercado Nocturno reúne a emprendedores y visitantes en una actividad abierta a la comunidad. Además, permite conocer intereses, preferencias, percepción de precios, variedad de productos, asistencia y posibles mejoras para este tipo de ferias.</p>
 							<ul class="actions">
-								<li><a href="#contacto" class="button smooth-scroll">Participa en la actividad</a></li>
+								<li><a href="#resultados-encuestas" class="button smooth-scroll">Conoce la comunidad</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -250,11 +276,11 @@
 					</section>
 
 				<!-- Six -->
-					<section class="wrapper style1 align-center survey-results">
+					<section class="wrapper style1 align-center survey-results" id="resultados-encuestas">
 						<div class="inner">
-							<h2>Resultados de las encuestas</h2>
-							<p>Analizamos las opiniones de los asistentes para entender el valor de las artesanías y el emprendimiento en nuestra comunidad </p>
-							<div class="items style1 medium onscroll-fade-in">
+							<h2>Conoce la comunidad</h2>
+							<p>Analizamos las opiniones de los asistentes para entender el valor de las artesanías y el emprendimiento en nuestra comunidad mediante encuestas.</p>
+							<div class="items style1 medium onscroll-fade-in survey-question-grid">
 								<section>
 									<span class="icon solid style2 major fa-calendar-alt"></span>
 									<h3>¿Con qué frecuencia participa o visita ferias de artesanías?</h3>
@@ -365,6 +391,47 @@
 										<li><span>Peluches</span><span>0%</span></li>
 										<li><span>Otro</span><span>0%</span></li>
 									</ul>
+								</section>
+								<div class="survey-question-break" aria-hidden="true"></div>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué lo motivó a participar o visitar esta actividad de artesanías?</h3>
+									<p class="open-question-answer">La curiosidad por conocer la feria y sus artesanías, ya sea por primera visita o por asistir ocasionalmente. Las respuestas indican que la conocieron por redes sociales o por amigos y familiares.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué es lo que más le interesa o disfruta de esta actividad de artesanías?</h3>
+									<p class="open-question-answer">La variedad de productos artesanales; entre las opciones consultadas, las pulseras y las cadenas fueron las más elegidas.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué importancia considera que tiene esta actividad para la comunidad?</h3>
+									<p class="open-question-answer">Puede ser un espacio para reunir a la comunidad y dar visibilidad a los emprendimientos; sin embargo, las opiniones sobre si la actividad beneficia a la comunidad estuvieron divididas.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué dificultades o problemas ha identificado al participar en esta actividad?</h3>
+									<p class="open-question-answer">Las respuestas estuvieron divididas respecto a si los precios eran adecuados y si la actividad era accesible para distintos grupos.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué cambios o mejoras propondría para esta actividad?</h3>
+									<p class="open-question-answer">Como posibles áreas de mejora, se podría revisar la percepción de los precios y reforzar la accesibilidad y la difusión del evento.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué productos le gustaría encontrar y no vio hoy?</h3>
+									<p class="open-question-answer">La encuesta destacó el interés por pulseras y cadenas. No se preguntó directamente qué productos adicionales hicieron falta, así que sería útil incluir esa consulta en futuras encuestas.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Qué otras personas o grupos considera que podrían beneficiarse de esta actividad?</h3>
+									<p class="open-question-answer">Los emprendimientos y la comunidad podrían beneficiarse, aunque las respuestas sobre el beneficio para emprendedores también estuvieron divididas.</p>
+								</section>
+								<section class="open-question-card">
+									<span class="icon solid style2 major fa-comment-dots"></span>
+									<h3>¿Hay algún aspecto adicional de su experiencia que considere mencionar?</h3>
+									<p class="open-question-answer">Las calificaciones registradas para la experiencia general, la variedad de productos y la asistencia fueron buenas o muy buenas.</p>
 								</section>
 							</div>
 						</div>
