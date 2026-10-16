@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Artesanías en el Mercado Nocturno</title>
+		<title>Mercado Nocturno</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,10 +29,20 @@
 				text-align: justify;
 			}
 
+			.event-spotlight {
+				min-height: 27.2rem;
+			}
+
 			@media screen and (max-width: 1280px) {
 				#wrapper > .banner .content > h1,
 				.event-section h2 {
 					white-space: normal;
+				}
+			}
+
+			@media screen and (max-width: 980px) {
+				.event-spotlight {
+					min-height: 0;
 				}
 			}
 		</style>
@@ -45,7 +55,7 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Artesanías en el Mercado Nocturno</h1>
+							<h1>Mercado Nocturno</h1>
 							<p class="major">
 								Una mirada a los emprendimientos, productos artesanales y experiencias
 								de los participantes del Mercado Nocturno del Barrio Chino de Guayaquil.
@@ -55,7 +65,7 @@
 								entre Chile y Pichincha, frente a la Biblioteca Municipal.
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Conocer la actividad</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll">Conocer la actividad</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -65,7 +75,7 @@
 
 				<!-- Two -->
 					<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in event-spotlight" id="first">
 									<div class="content event-section">
         					<h2>Sobre la actividad</h2>
 
@@ -94,7 +104,7 @@
 					</section>
 
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in event-spotlight">
 									<div class="content event-section">
 								<h2>Stands de artesanias</h2>
 								<p>Se ofrecen llaveros, cadenas, amuletos, bolsos pequeños, peluches de distintos personajes y otros accesorios hechos a mano. La variedad de diseños permite encontrar opciones para diferentes gustos.</p>
@@ -105,7 +115,7 @@
 					</section>
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in event-spotlight">
 									<div class="content event-section">
 							<h2>Relevancia para la comunidad</h2>
 							<p>El Mercado Nocturno reúne a emprendedores y visitantes en una actividad abierta a la comunidad. Además, permite conocer intereses, preferencias, percepción de precios, variedad de productos, asistencia y posibles mejoras para este tipo de ferias.</p>
