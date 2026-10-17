@@ -2,7 +2,7 @@
 
 Página web que presenta la información recopilada durante la visita al Mercado Nocturno del Barrio Chino de Guayaquil, con énfasis en los stands de artesanías, los emprendimientos y las opiniones de visitantes y artesanos.
 
-## Integrantes DAWM PAR 3 - G5
+## Integrantes del Proyecto 2 DAWM PAR 3 - G5
 
 - Enríquez Pérez Dereck Oscar
 - Santana León Anthony Iván
