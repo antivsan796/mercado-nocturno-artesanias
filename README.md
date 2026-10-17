@@ -17,7 +17,7 @@ El Mercado Nocturno del Barrio Chino de Guayaquil se realizó el 3 de octubre de
 
 La actividad reunió a artesanos, emprendedores, visitantes y organizadores. Durante el evento se ofrecieron productos como pulseras, cadenas, accesorios, peluches, amuletos y otros artículos, además de gastronomía y actividades culturales.
 
-![Stand de artesanías del Mercado Nocturno](imagenes%20ferias/stand4.jpeg)
+![Stand de artesanías del Mercado Nocturno](imagenes%20ferias/stand5.jpeg)
 
 Se seleccionó esta actividad porque permite conocer la experiencia de los visitantes y de los emprendedores que participan en este tipo de ferias. Para recopilar información se realizaron tres entrevistas: dos a visitantes y una a una artesana.
 
