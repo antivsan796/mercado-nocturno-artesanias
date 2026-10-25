@@ -1,0 +1,880 @@
+/* ============================================================
+   MERCADO NOCTURNO - PERSONALIZACIÓN
+   Proyecto 02 DAWM
+   ============================================================ */
+
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
+
+:root {
+    --rojo: #a7191f;
+    --rojo-oscuro: #7e1116;
+    --dorado: #d7a637;
+    --negro: #111111;
+    --gris-claro: #f5f5f5;
+    --gris-barra: #e5e5e5;
+    --texto: #252525;
+    --blanco: #ffffff;
+}
+
+
+/* ============================================================
+   AJUSTES GENERALES
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--texto);
+}
+
+#wrapper > section[id],
+main > section[id] {
+    scroll-margin-top: 4rem;
+}
+
+
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.main-nav {
+    background: var(--negro);
+    width: 100%;
+}
+
+.main-nav .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 3.5rem);
+
+    max-width: 80rem;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    list-style: none;
+}
+
+.main-nav .nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .nav-links a {
+    display: block;
+
+    padding: 0.9rem 0 0.75rem;
+
+    color: var(--blanco);
+
+    font-size: 0.85rem;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    border-bottom: 0.2rem solid transparent;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.main-nav .nav-links a:hover,
+.main-nav .nav-links a:focus-visible {
+    color: var(--dorado);
+    border-bottom-color: var(--dorado);
+}
+
+
+/* ============================================================
+   BOTÓN MENÚ MÓVIL
+   ============================================================ */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* ============================================================
+   PORTADA
+   ============================================================ */
+
+#inicio .content > h1 {
+    font-size: 2.8rem;
+}
+
+#inicio .content p {
+    text-align: justify;
+}
+
+#inicio .button:hover {
+    border-color: var(--rojo);
+    color: var(--rojo) !important;
+}
+
+
+/* ============================================================
+   DATOS DEL EVENTO
+   ============================================================ */
+
+.event-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    margin: 0 0 2rem 0;
+}
+
+.event-data strong,
+.event-data span {
+    display: inline-block;
+
+    padding: 0.4rem 0.75rem;
+
+    border-radius: 0.35rem;
+
+    background: #f4f4f4;
+
+    font-size: 0.8rem;
+}
+
+
+/* ============================================================
+   SECCIONES GENERALES
+   ============================================================ */
+
+.event-section p {
+    text-align: justify;
+}
+
+.event-spotlight {
+    min-height: 25rem;
+}
+
+
+/* ============================================================
+   CALENDARIO
+   ============================================================ */
+
+.calendar-section .image {
+    background: #f4efe3;
+}
+
+.calendar-section .image img {
+    object-fit: contain !important;
+    padding: 1rem;
+}
+
+
+/* ============================================================
+   GALERÍA
+   ============================================================ */
+
+.gallery-heading {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.gallery-heading p {
+    margin-bottom: 0;
+}
+
+.gallery.style2.small article {
+    width: 14rem;
+}
+
+.gallery.style2.small article .image img {
+    width: 100%;
+    height: 18rem;
+
+    object-fit: cover;
+}
+
+.gallery.style2.small article .caption {
+    padding: 1rem;
+}
+
+.gallery.style2.small article .caption h3 {
+    font-size: 1rem;
+}
+
+
+/* ============================================================
+   ENCUESTAS - CONTENEDOR
+   ============================================================ */
+
+.survey-results > .inner {
+    width: min(80rem, calc(100% - 3rem));
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.survey-header {
+    margin-bottom: 2rem;
+}
+
+.survey-header p {
+    margin-bottom: 0.5rem;
+}
+
+.survey-total {
+    color: var(--rojo);
+}
+
+
+/* ============================================================
+   LISTADO DE PREGUNTAS
+   ============================================================ */
+
+.survey-list {
+    border-top: 1px solid #dddddd;
+}
+
+.survey-card {
+    display: grid;
+
+    grid-template-columns:
+        minmax(15rem, 0.9fr)
+        minmax(20rem, 1.4fr);
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: 1.5rem 0;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* ============================================================
+   PREGUNTA
+   ============================================================ */
+
+.survey-question {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+.question-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--rojo);
+
+    color: var(--blanco);
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.survey-question h3 {
+    margin: 0;
+
+    font-size: 1.05rem;
+    line-height: 1.4;
+
+    letter-spacing: 0;
+}
+
+
+/* ============================================================
+   RESPUESTAS
+   ============================================================ */
+
+.survey-bars {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.survey-bars li {
+    margin: 0 0 0.7rem 0;
+    padding: 0;
+}
+
+.survey-bars li:last-child {
+    margin-bottom: 0;
+}
+
+.answer-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 0.25rem;
+
+    font-size: 0.82rem;
+}
+
+.answer-row strong {
+    font-weight: 500;
+}
+
+
+/* ============================================================
+   BARRAS
+   ============================================================ */
+
+.bar {
+    width: 100%;
+    height: 0.4rem;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--gris-barra);
+}
+
+.bar span {
+    display: block;
+
+    width: var(--value);
+    height: 100%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--rojo),
+            #d14a3c
+        );
+}
+
+
+/* ============================================================
+   PREGUNTAS ABIERTAS
+   ============================================================ */
+
+.open-results {
+    margin-top: 4rem;
+}
+
+.open-results > header {
+    margin-bottom: 2rem;
+}
+
+.open-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+}
+
+.open-card {
+    position: relative;
+
+    padding: 1.35rem;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 0.45rem;
+
+    background: #fafafa;
+}
+
+.open-card h3 {
+    padding-right: 2.8rem;
+
+    margin-bottom: 0.75rem;
+
+    font-size: 1rem;
+    line-height: 1.4;
+
+    letter-spacing: 0;
+}
+
+.open-card p {
+    margin: 0;
+
+    font-size: 0.86rem;
+    line-height: 1.55;
+
+    text-align: justify;
+}
+
+.open-number {
+    position: absolute;
+
+    top: 1rem;
+    right: 1rem;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+
+    background: var(--dorado);
+
+    color: var(--negro);
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   MAPA
+   ============================================================ */
+
+.location-section .inner {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.map-container {
+    width: 100%;
+    height: 28rem;
+
+    overflow: hidden;
+
+    border-radius: 0.5rem;
+}
+
+.map-container iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* ============================================================
+   REGISTRO
+   ============================================================ */
+
+.register-section .inner {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.register-section form {
+    margin-top: 2rem;
+}
+
+
+/* ============================================================
+   BOTONES
+   ============================================================ */
+
+.button:hover,
+input[type="submit"]:hover {
+    box-shadow:
+        inset 0 0 0 1px var(--rojo) !important;
+
+    color: var(--rojo) !important;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+    border-top: 1px solid #e3e3e3;
+}
+
+.site-footer .inner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media screen and (max-width: 980px) {
+
+    .event-spotlight {
+        min-height: 0;
+    }
+
+    .survey-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .open-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ============================================================
+   CELULAR
+   ============================================================ */
+
+@media screen and (max-width: 736px) {
+
+    /* --------------------------------------------------------
+       MENÚ
+       -------------------------------------------------------- */
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: none;
+
+        height: 3.2rem;
+
+        margin: 0;
+        padding: 0 1rem;
+
+        border: 0;
+        border-radius: 0;
+
+        background: var(--negro);
+
+        box-shadow: none;
+
+        color: var(--blanco) !important;
+
+        font-size: 0.9rem;
+
+        line-height: normal;
+    }
+
+    .menu-icon {
+        font-size: 1.25rem;
+    }
+
+    .menu-text {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .main-nav .nav-links {
+        display: none;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 0;
+
+        padding: 0;
+    }
+
+    .main-nav.menu-open .nav-links {
+        display: flex;
+    }
+
+    .main-nav .nav-links li {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .main-nav .nav-links a {
+        width: 100%;
+
+        padding: 0.75rem 1rem;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.12);
+
+        font-size: 0.82rem;
+    }
+
+
+    /* --------------------------------------------------------
+       PORTADA
+       -------------------------------------------------------- */
+
+    #inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inicio .content {
+        order: 1;
+
+        padding: 2.2rem 1.5rem !important;
+    }
+
+    #inicio .image {
+        order: 2;
+
+        height: 18rem !important;
+        min-height: 18rem !important;
+    }
+
+    #inicio .image img {
+        object-fit: cover;
+    }
+
+    #inicio .content > h1 {
+        font-size: 2rem;
+
+        white-space: normal;
+    }
+
+    #inicio .content p {
+        font-size: 0.9rem;
+    }
+
+
+    /* --------------------------------------------------------
+       DATOS DEL EVENTO
+       -------------------------------------------------------- */
+
+    .event-data {
+        flex-direction: column;
+
+        gap: 0.35rem;
+    }
+
+
+    /* --------------------------------------------------------
+       SECCIONES CON FOTO
+       -------------------------------------------------------- */
+
+    .event-spotlight .content {
+        padding: 2rem 1.5rem !important;
+    }
+
+    .event-spotlight .image {
+        height: 16rem !important;
+        min-height: 16rem !important;
+    }
+
+    .event-spotlight .image img {
+        object-fit: cover;
+    }
+
+    .event-section h2 {
+        font-size: 1.8rem;
+    }
+
+
+    /* --------------------------------------------------------
+       CALENDARIO
+       -------------------------------------------------------- */
+
+    .calendar-section .image {
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 1rem;
+
+        background: #f4efe3;
+    }
+
+    .calendar-section .image img {
+        position: relative !important;
+
+        width: 100%;
+        height: auto !important;
+
+        object-fit: contain !important;
+
+        padding: 0;
+    }
+
+
+    /* --------------------------------------------------------
+       GALERÍA
+       -------------------------------------------------------- */
+
+    .gallery-heading {
+        padding:
+            2rem 1.25rem
+            1.5rem !important;
+    }
+
+    .gallery-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .gallery-heading p {
+        font-size: 0.85rem;
+    }
+
+    .gallery.style2.small article {
+        width: 72vw;
+
+        max-width: 17rem;
+    }
+
+    .gallery.style2.small article .image img {
+        height: 17rem;
+
+        object-fit: cover;
+    }
+
+
+    /* --------------------------------------------------------
+       ENCUESTAS
+       -------------------------------------------------------- */
+
+    .survey-results > .inner {
+        width: calc(100% - 2rem);
+
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .survey-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .survey-header p {
+        font-size: 0.85rem;
+    }
+
+    .survey-card {
+        grid-template-columns: 1fr;
+
+        gap: 0.8rem;
+
+        padding: 1.2rem 0;
+    }
+
+    .survey-question {
+        gap: 0.7rem;
+    }
+
+    .question-number {
+        width: 2rem;
+        height: 2rem;
+
+        font-size: 0.65rem;
+    }
+
+    .survey-question h3 {
+        font-size: 0.9rem;
+        line-height: 1.35;
+    }
+
+    .answer-row {
+        font-size: 0.75rem;
+    }
+
+    .bar {
+        height: 0.32rem;
+    }
+
+
+    /* --------------------------------------------------------
+       ABIERTAS
+       -------------------------------------------------------- */
+
+    .open-results {
+        margin-top: 2.5rem;
+    }
+
+    .open-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0.75rem;
+    }
+
+    .open-card {
+        padding: 1rem;
+    }
+
+    .open-card h3 {
+        font-size: 0.86rem;
+    }
+
+    .open-card p {
+        font-size: 0.77rem;
+        line-height: 1.5;
+    }
+
+
+    /* --------------------------------------------------------
+       MAPA
+       -------------------------------------------------------- */
+
+    .map-container {
+        height: 20rem;
+    }
+
+
+    /* --------------------------------------------------------
+       FORMULARIO
+       -------------------------------------------------------- */
+
+    .register-section .inner {
+        padding:
+            2.5rem 1.25rem !important;
+    }
+
+    .register-section h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+/* ============================================================
+   CELULARES MUY PEQUEÑOS
+   ============================================================ */
+
+@media screen and (max-width: 480px) {
+
+    .survey-results > .inner {
+        width: calc(100% - 1.5rem);
+    }
+
+    .question-number {
+        display: none;
+    }
+
+    .survey-question {
+        display: block;
+    }
+
+    .survey-question h3 {
+        text-align: left;
+    }
+
+}
