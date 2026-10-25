@@ -49,14 +49,15 @@ main > section[id] {
 }
 
 .main-nav {
-    background: var(--negro);
     width: 100%;
+    background: var(--negro);
 }
 
 .main-nav .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: clamp(1rem, 4vw, 3.5rem);
 
     max-width: 80rem;
@@ -132,6 +133,7 @@ main > section[id] {
 .event-data {
     display: flex;
     flex-wrap: wrap;
+
     gap: 0.5rem;
 
     margin: 0 0 2rem 0;
@@ -174,12 +176,13 @@ main > section[id] {
 
 .calendar-section .image img {
     object-fit: contain !important;
+
     padding: 1rem;
 }
 
 
 /* ============================================================
-   GALERÍA
+   GALERÍA - ENCABEZADO
    ============================================================ */
 
 .gallery-heading {
@@ -190,6 +193,57 @@ main > section[id] {
 .gallery-heading p {
     margin-bottom: 0;
 }
+
+
+/* ============================================================
+   VIDEO DEL EVENTO
+   ============================================================ */
+
+.event-video {
+    width: min(60rem, calc(100% - 3rem));
+
+    margin: 0 auto 3rem;
+
+    padding: 1.5rem;
+
+    background: #f7f7f7;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+}
+
+.event-video h3 {
+    margin-bottom: 0.5rem;
+
+    font-size: 1.5rem;
+}
+
+.event-video p {
+    max-width: 50rem;
+
+    margin: 0 auto 1.25rem;
+
+    font-size: 0.95rem;
+}
+
+.event-video video {
+    display: block;
+
+    width: 100%;
+    max-width: 55rem;
+    max-height: 34rem;
+
+    margin: 0 auto;
+
+    border-radius: 0.4rem;
+
+    background: #000000;
+}
+
+
+/* ============================================================
+   GALERÍA
+   ============================================================ */
 
 .gallery.style2.small article {
     width: 14rem;
@@ -236,7 +290,7 @@ main > section[id] {
 
 
 /* ============================================================
-   LISTADO DE PREGUNTAS
+   LISTADO DE PREGUNTAS CERRADAS
    ============================================================ */
 
 .survey-list {
@@ -344,7 +398,7 @@ main > section[id] {
 
 
 /* ============================================================
-   BARRAS
+   BARRAS DE RESULTADOS
    ============================================================ */
 
 .bar {
@@ -532,6 +586,7 @@ input[type="submit"]:hover {
 
     .survey-card {
         grid-template-columns: 1fr;
+
         gap: 1rem;
     }
 
@@ -547,6 +602,7 @@ input[type="submit"]:hover {
    ============================================================ */
 
 @media screen and (max-width: 736px) {
+
 
     /* --------------------------------------------------------
        MENÚ
@@ -586,7 +642,9 @@ input[type="submit"]:hover {
 
     .menu-text {
         font-size: 0.75rem;
+
         letter-spacing: 0.1em;
+
         text-transform: uppercase;
     }
 
@@ -630,6 +688,7 @@ input[type="submit"]:hover {
 
     #inicio {
         display: flex;
+
         flex-direction: column;
     }
 
@@ -737,6 +796,38 @@ input[type="submit"]:hover {
         font-size: 0.85rem;
     }
 
+
+    /* --------------------------------------------------------
+       VIDEO
+       -------------------------------------------------------- */
+
+    .event-video {
+        width: calc(100% - 2rem);
+
+        margin: 0 auto 2rem;
+
+        padding: 1rem;
+    }
+
+    .event-video h3 {
+        font-size: 1.2rem;
+    }
+
+    .event-video p {
+        font-size: 0.82rem;
+    }
+
+    .event-video video {
+        width: 100%;
+
+        max-height: 24rem;
+    }
+
+
+    /* --------------------------------------------------------
+       FOTOS DE GALERÍA
+       -------------------------------------------------------- */
+
     .gallery.style2.small article {
         width: 72vw;
 
@@ -803,7 +894,7 @@ input[type="submit"]:hover {
 
 
     /* --------------------------------------------------------
-       ABIERTAS
+       PREGUNTAS ABIERTAS
        -------------------------------------------------------- */
 
     .open-results {
@@ -875,6 +966,20 @@ input[type="submit"]:hover {
 
     .survey-question h3 {
         text-align: left;
+    }
+
+    .event-video {
+        width: calc(100% - 1rem);
+
+        padding: 0.75rem;
+    }
+
+    .event-video h3 {
+        font-size: 1.1rem;
+    }
+
+    .event-video p {
+        font-size: 0.78rem;
     }
 
 }
